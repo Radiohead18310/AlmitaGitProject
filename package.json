@@ -1,0 +1,29 @@
+{
+  "name": "AlmitaGit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Radiohead18310/AlmitaGitProject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Radiohead18310/AlmitaGitProject/issues"
+  },
+  "homepage": "https://github.com/Radiohead18310/AlmitaGitProject#readme",
+  "dependencies": {
+    "cookie-session": "^1.4.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.0",
+    "express-myconnection": "^1.0.4",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "path": "^0.12.7"
+  }
+}

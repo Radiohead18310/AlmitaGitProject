@@ -22,6 +22,7 @@
     "express": "^4.17.1",
     "express-handlebars": "^4.0.0",
     "express-myconnection": "^1.0.4",
+    "materialize-css": "^1.0.0-rc.2",
     "morgan": "^1.10.0",
     "mysql": "^2.18.1",
     "path": "^0.12.7"

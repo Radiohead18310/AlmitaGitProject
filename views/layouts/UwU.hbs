@@ -1,0 +1,53 @@
+<section class="aling invoice-list-wrapper section">
+                
+                <h3>Usuarios</h3>
+                <div class="responsive-table">
+                    <div class="dataTables_wrapper no-footer">
+                        <div class="top display-flex mb-2">
+                            <div class="action-filters">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <table class="responsive-table highlight">
+                    <thead>
+                        <tr>
+                            <td>Nombre</td>
+                            <td>Apellido Paterno</td>
+                            <td>Apellido Materno</td>
+                            <td>Email</td>
+                            <td colspan="2">Acciones</td>
+                        </tr>
+                    </thead>
+                     <tbody id="tabla_usu">
+                                        {{#each usuariosRetorno}}
+                                        <tr>
+                                            <td  contenteditable="true" id="nom_usu{{id_usu}}">{{nom_usu}}</td>
+                                            <td  contenteditable="true" id="app_usu{{id_usu}}">{{app_usu}}</td>
+                                            <td  contenteditable="true" id="apm_usu{{id_usu}}">{{apm_usu}}</td>
+                                            <td id="cor_usu{{id_usu}}">{{cor_usu}}</td>
+                                            <td>
+                                                <a href="javascript:void(0);" onclick="modificarUsuario({{id_usu}}, document.getElementById('nom_usu{{id_usu}}').innerText,document.getElementById('app_usu{{id_usu}}').innerText,document.getElementById('apm_usu{{id_usu}}').innerText);" class="waves-effect waves-teal btn-flat">Modificar Usuario</a>
+                                            </td>
+                                            <td>
+                                                <a href="javascript:void(0);" onclick="eliminarUsuario({{id_usu}});" class="waves-effect waves-teal btn-flat">Eliminar</a>
+                                            </td>
+                                        </tr>
+
+                                        {{else}}
+                                        <tr>
+                                            <td>---</td>
+                                            <td>---</td>
+                                            <td>---</td>
+                                            <td>---</td>
+                                            <td>---</td>
+                                            <td>---</td>
+                                            <td>---</td>
+                                        </tr>
+                                        {{/each}}
+                                    </tbody>
+                                </table>
+                                 <!-- create invoice button-->
+            </section>

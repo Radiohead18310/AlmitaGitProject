@@ -1,49 +1,39 @@
 
-    <br>
-    <br>
-    <br>
-    <div class="container"> 
-        <div>
-            <div class="col s12 m6">
-              <div class="card red darken-2">
-                <div class="card-content white-text">
-                  <span class="card-title">Registro UwU</span>
-                  <p>
-                    <div class="row">
-                        <form class="col s12">
-                          <div class="row">
-                            <div class="input-field col s6">
-                              <input class="white-text" id="first_name" type="text" class="validate">
-                              <label class="white-text" for="first_name">Nombre</label>
-                            </div>
-                            <div class="input-field col s6">
-                              <input class="white-text" id="last_name" type="text" class="validate">
-                              <label class="white-text" for="last_name">Apellido</label>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="input-field col s12">
-                              <input class="white-text" id="email" type="email" class="validate">
-                              <label class="white-text" for="email">Correo</label>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="input-field col s12">
-                              <input class="white-text" id="password" type="password" class="validate">
-                              <label class="white-text" for="password">Contraseña</label>
-                            </div>
-                          </div>
-                          <button class="btn waves-effect waves-light" type="submit" name="action">Registrar
-                            <i class="material-icons right">send</i>
-                          </button> 
-                        </form>
-                      </div>
-                  </p>
-                </div> 
-              </div>
-            </div>
-          </div>   
-        
-    </div>
+
+  <main>
+    <section class="aling">
+       <h1>BIENVENIDO</h1>
+	<br>
+	<hr>
+	<br>
+    <h4>
+		Inicio De Sesion
+    </h4>
+	<br>
+<form class="contact100-form validate-form" method="POST" action="/ISession">
+    	<div class="wrap-input100  validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<span class="label-input100">Email</span>
+					<input class="input100" type="text" id="email" name="email" placeholder="Email">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100  validate-input" data-validate = "">
+					<span class="label-input100">Password</span>
+					<input class="input100" type="password" id="pass" name="pass" placeholder="Password">
+					<span class="focus-input100"></span>
+				</div>
+         <div class="container-contact100-form-btn">
+					<button class="contact100-form-btn" type="submit  ">
+						<span>
+							Iniciar Sesion
+							<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+						</span>
+					</button>
+				</div>
+
+</form>
+    </section>
+   
 
     
+  </main>
